@@ -23,7 +23,7 @@
     "env": "production"
   },
   "apps": [{
-    "app_id": "app_cf17e1da-ac7d-44af-8dc6-1d47e9f9f091",
+    "app_id": "cf17eapp_1da-ac7d-44af-8dc6-1d47e9f9f091",
     "deploy_url": "https://api.clever-cloud.com/v2/github/redeploy",
     "name": "tech-blog-app",
     "alias": "tech-blog"
