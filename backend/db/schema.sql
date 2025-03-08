@@ -1,4 +1,8 @@
-CREATE DATABASE IF NOT EXISTS tech_blog;
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'tech_blog')
+BEGIN
+    CREATE DATABASE tech_blog;
+END
+GO
 USE tech_blog;
 
 CREATE TABLE IF NOT EXISTS users (
