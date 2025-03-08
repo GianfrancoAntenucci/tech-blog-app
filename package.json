@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build": "npm install"
+    "build": "npm install",
+    "check-db": "node scripts/check-db.js",
+    "init-db": "node scripts/init-db.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
