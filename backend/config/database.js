@@ -1,15 +1,16 @@
 const mysql = require('mysql2');
 
 const pool = mysql.createPool({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'ola',
-    database: 'tech_blog',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
-    port: 3306,
-    socketPath: '/tmp/mysql.sock'
+    ssl: process.env.NODE_ENV === 'production' ? {
+        rejectUnauthorized: true
+    } : false
 });
 
 const promisePool = pool.promise();
