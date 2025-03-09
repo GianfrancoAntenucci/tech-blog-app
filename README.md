@@ -105,7 +105,7 @@ This application is configured for deployment on Clever Cloud. Environment varia
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
